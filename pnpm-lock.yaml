@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  dayjs:
+    specifier: ^1.11.11
+    version: 1.11.11
   gsap:
     specifier: ^3.12.5
     version: 3.12.5
@@ -17,6 +20,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.3.1(react@18.3.1)
+  video-animation-player:
+    specifier: ^1.0.5
+    version: 1.0.5
 
 devDependencies:
   '@types/matter-js':
@@ -878,6 +884,10 @@ packages:
     resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
     dev: true
 
+  /dayjs@1.11.11:
+    resolution: {integrity: sha512-okzr3f11N6WuqYtZSvm+F776mB41wRZMhKP+hc34YdW+KmtYYK9iqvHSwo2k9FEH3fhGXvOPV6yz2IcSrfRUDg==}
+    dev: false
+
   /debug@4.3.5:
     resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
@@ -1725,6 +1735,10 @@ packages:
     dependencies:
       punycode: 2.3.1
     dev: true
+
+  /video-animation-player@1.0.5:
+    resolution: {integrity: sha512-KLz+uL6zojOYXEPFxL2AB0iKSLHnmKQPBnXmFWHpGtAdB6/j9EWCbWcUDCg0KVOBTFRHa2UfiSNK0y1I+LEfpA==}
+    dev: false
 
   /vite@5.2.12(less@4.2.0):
     resolution: {integrity: sha512-/gC8GxzxMK5ntBwb48pR32GGhENnjtY30G4A0jemunsBkiEZFw60s8InGpN8gkhHEkjnRK1aSAxeQgwvFhUHAA==}
