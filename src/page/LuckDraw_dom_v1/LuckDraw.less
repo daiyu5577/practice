@@ -1,0 +1,23 @@
+.luckDraw {
+  display: flex;
+  justify-content: space-around;
+  z-index: 999;
+
+  .luckDraw-item:nth-last-of-type(2n + 1) {
+    background-color: #ccc;
+  }
+
+  .luckDraw-item {
+    flex: 1;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    color: red;
+    font-size: 28px;
+
+    &.actived {
+      background-color: green;
+      color: #fff;
+    }
+  }
+}
