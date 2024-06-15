@@ -12,6 +12,8 @@ export default function MatterComp() {
   const renderRef = useRef<Render>()
   const engineRef = useRef<Engine>()
 
+  const ballRef = useRef<Body>()
+
   // body
   const moveBallRef = useRef<Constraint>()
 
@@ -118,6 +120,7 @@ export default function MatterComp() {
         y: 20
       })
     }, 1000 / 60)
+    ballRef.current = ball
     moveBallRef.current = moveBarConstraint
     return [moveBar, ball, moveBarConstraint]
   }
@@ -179,6 +182,8 @@ export default function MatterComp() {
     // 绑定事件
     mainDOM.current?.addEventListener('click', () => {
       Composite.remove(engineRef.current!.world, moveBallRef.current as Constraint)
+      // 调整速度
+      Body.setSpeed(ballRef.current as Body, 6)
       setTimeout(() => {
         Composite.add(engineRef.current!.world!, moveBallRef.current as Constraint)
       }, 4000);
