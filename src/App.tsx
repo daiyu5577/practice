@@ -3,6 +3,7 @@ import MatterComp from './page/Matter' // 2d 物理
 import HatTrickComp from './page/HatTrick' // js 帽子戏法
 import HatTrickGasp from './page/HatTrickGasp' // gasp 帽子戏法
 import BackgroundCanvas from './page/BackgroundCanvas' // canvas 底部动画
+import Preserve3d from './page/Preserve3d' // 3d 透视
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <MatterComp /> */}
       {/* <HatTrickComp /> */}
       {/* <HatTrickGasp /> */}
-      <BackgroundCanvas />
+      {/* <BackgroundCanvas /> */}
+      <Preserve3d />
     </React.Fragment>
   )
 }
