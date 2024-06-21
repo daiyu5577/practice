@@ -26,6 +26,8 @@ const layer_1 = getBallPostion(-45, 60, 8)
 const layer_2 = getBallPostion(0, 120, 16)
 const layer_3 = getBallPostion(45, 100, 12)
 
+// 球面坐标计算
+
 export default function RotateBallXY() {
   return (
     <div className={styles.rotateZ}>

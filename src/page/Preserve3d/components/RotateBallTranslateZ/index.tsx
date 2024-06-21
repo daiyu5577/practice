@@ -8,13 +8,8 @@ const getXY = (rad: number, l: number) => {
 }
 
 const layer_1 = new Array(6).fill(1)
-const layer_2 = new Array(16).fill(1)
-const layer_3 = new Array(8).fill(1)
 
-const getBallPostion = (rad: number, radius: number, num: number) => {
-  const x = radius * Math.cos(rad)
-  const y = radius * Math.sin(rad)
-}
+// 通过 translateZ 进行位移
 
 export default function RotateZ() {
   return (

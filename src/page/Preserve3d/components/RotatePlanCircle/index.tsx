@@ -7,6 +7,8 @@ const getXY = (rad: number, l: number) => {
   return { x, y }
 }
 
+// 平面圆形角度平分分布
+
 export default function RotateZ() {
   return (
     <div className={styles.rotateZ}>
