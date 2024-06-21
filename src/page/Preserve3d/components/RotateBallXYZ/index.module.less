@@ -21,19 +21,25 @@
       width: 300px;
       height: 500px;
       position: relative;
+      // 设置透视观察者、默认中心位置
+      perspective: 300px; // z 轴距离
+      perspective-origin: center; // 镜头
 
       .boxCenter {
         position: absolute;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
+        transform: rotateY(0deg);
         width: 50px;
         height: 50px;
         border-radius: 50%;
         background-color: blue;
         transform-style: preserve-3d;
+        // 当前旋转着、若被设置为观察者、旋转时观察者镜头也会旋转，导致近大远小出现椭圆异常
+        // 当父级设为观察着、子级旋转不会异常
         // perspective: 300px; // z 轴距离
-        // perspective-origin: 100px -50px; // 镜头
+        perspective-origin: center; // 镜头
 
         &:local {
           animation: rotate 10s linear infinite;
@@ -44,8 +50,9 @@
           height: 10px;
           background-color: aqua;
           position: absolute;
-          top: 40%;
-          left: 40%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
       }
     }

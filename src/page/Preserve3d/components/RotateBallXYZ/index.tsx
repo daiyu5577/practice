@@ -22,9 +22,9 @@ const getBallPostion = (deg: number, radius: number, needNum: number) => {
   return postionArr
 }
 
-const layer_1 = getBallPostion(-45, 60, 8)
-const layer_2 = getBallPostion(0, 120, 16)
-const layer_3 = getBallPostion(45, 100, 12)
+const layer_1 = getBallPostion(-20, 60, 8)
+const layer_2 = getBallPostion(0, 40, 16)
+const layer_3 = getBallPostion(45, 50, 12)
 
 // 球面坐标计算
 

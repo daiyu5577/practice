@@ -4,6 +4,16 @@
   justify-content: center;
   height: 100vh;
 
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -50%) rotateY(0);
+    }
+
+    100% {
+      transform: translate(-50%, -50%) rotateY(360deg);
+    }
+  }
+
   :global {
 
     .box {
@@ -23,7 +33,11 @@
         background-color: blue;
         transform-style: preserve-3d;
         perspective: 250px; // z 轴距离
-        perspective-origin: 100px -50px; // 镜头
+        // perspective-origin: 100px -50px; // 镜头
+
+        // &:local {
+        //   animation: rotate 10s linear infinite;
+        // }
 
         .item {
           width: 10px;
